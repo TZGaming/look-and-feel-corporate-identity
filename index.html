@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embassay of the Free Mind</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+</head>
+
+<body>  
+    <header>
+    <div class="header-container">
+        <!-- Hamburger button -->
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <ul class="header_links">
+                <li><a href="#">Tickets</a></li>
+                <li><a href="Catalog.html">Catalogus</a></li>
+                <li><a href="#">Organisatie</a></li>
+                <li><a href="#">Donatie</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+<main>
+    <section>
+        <div class="museum-grid">
+            <div class="museum">
+                <img src="assets/img/museum_fotos/3.jpg" alt="Café van Embassay of the Free Mind">
+            </div>
+            <div class="museum">
+                <img src="assets/img/museum_fotos/1.webp" alt="Bibliotheek van Embassay of the Free Mind">
+            </div>
+            <div class="museum">
+                <img src="assets/img/museum_fotos/2.jpg" alt="Foto van het Embassay of the Free Mind gebouw">
+            </div>
+        </div>
+    </section>
+
+<h1 id="blogs-text">Blogs</h1>
+<hr>
+
+    <section>
+        <div class="blog-grid">
+            <div class="blog">
+            </div>
+            <div class="blog">
+            </div>
+            <div class="blog">
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <ul class="page_links">
+            <li><a href="#">Adres</a></li>
+            <li><a href="#">Openingstijden</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Vacatures</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+        </ul>
+        <ul class="socials">
+            <li><a href="https://www.linkedin.com/company/embassy-of-the-free-mind/" aria-label="Embassy of the Free Mind on LinkedIn" title="Embassy of the Free Mind on LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/embassyofthefreemind/" aria-label="Embassy of the Free Mind on Instagram" title="Embassy of the Free Mind on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/embassyofthefreemind/" aria-label="Embassy of the Free Mind on Facebook" title="Embassy of the Free Mind on Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="http://www.youtube.com/theritmanlibrary" aria-label="Embassy of the Free Mind on YouTube" title="Embassy of the Free Mind on YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
+<!-- Hamburger toggle -->
+<script>
+    (function () {
+        const btn = document.querySelector('.menu-toggle');
+        const headerContainer = document.querySelector('.header-container');
+        if (!btn || !headerContainer) return;
+        btn.addEventListener('click', function () {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!expanded));
+            headerContainer.classList.toggle('open');
+        });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                headerContainer.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    })();
+</script>
+</body>
+</html>
