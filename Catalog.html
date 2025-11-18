@@ -39,19 +39,19 @@
     <section>
         <div class="book-grid">
             <div class="book">
-                <h1>Boek 1</h1>
+                <h1 style="color: white;">Boek 1</h1>
                 <img src="assets/img/boek_preview/Boek1.jpg" alt="Boek 1">
             </div>
             <div class="book">
-                <h1>Boek 2</h1>
+                <h1 style="color: white;">Boek 2</h1>
                 <img src="assets/img/boek_preview/Boek2.jpg" alt="Boek 2">
             </div>
             <div class="book">
-                <h1>Boek 3</h1>
+                <h1 style="color: white;">Boek 3</h1>
                 <img src="assets/img/boek_preview/Boek3.jpg" alt="Boek 3">
             </div>
             <div class="book">
-                <h1>Boek 4</h1>
+                <h1 style="color: white;">Boek 4</h1>
                 <img src="assets/img/boek_preview/Boek3.jpg" alt="Boek 4">
             </div>
         </div>
@@ -62,7 +62,7 @@
     <ul class="page_links">
         <li><a href="#">Adres</a></li>
         <li><a href="#">Openingstijden</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="Contact.html">Contact</a></li>
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Vacatures</a></li>
         <li><a href="#">Privacybeleid</a></li>
@@ -75,26 +75,7 @@
     </ul>
 </footer>
 
-<!-- Hamburger toggle -->
-<script>
-    (function () {
-        const btn = document.querySelector('.menu-toggle');
-        const headerContainer = document.querySelector('.header-container');
-        if (!btn || !headerContainer) return;
-        btn.addEventListener('click', function () {
-            const expanded = btn.getAttribute('aria-expanded') === 'true';
-            btn.setAttribute('aria-expanded', String(!expanded));
-            headerContainer.classList.toggle('open');
-        });
-
-        window.addEventListener('resize', function () {
-            if (window.innerWidth > 768) {
-                headerContainer.classList.remove('open');
-                btn.setAttribute('aria-expanded', 'false');
-            }
-        });
-    })();
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

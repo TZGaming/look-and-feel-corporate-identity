@@ -4,11 +4,43 @@ html, body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, p, a, span, summary, details { 
-    color: white;
+h1, h2, h3, h4, h5, p, span, summary, details { 
+    color: #002646;
     /* font-family: Muli, sans-serif; */
+}
+
+a {
+    color: white;
     font-weight: 600;
-} 
+}
+
+hr {
+    border-color: #002646;
+}
+
+input#submit-email {
+    padding: 3px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h1.contact {
+    margin-left: 10px;
+}
+
+section.contact-section {
+    margin-left: 25px;
+    p {
+        line-height: 0.85;
+    }
+}
+
+article.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 a {
     text-decoration: none;
@@ -20,7 +52,7 @@ body {
     flex-direction: column;
     width:100%;
     margin: 0;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
                 url(../assets/img/slideshow/1.jpg) no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
@@ -30,7 +62,6 @@ body {
 main {
     flex: 1;
 }
-
 
 header {
     background-color: rgb(5, 0, 33);
@@ -403,7 +434,7 @@ summary {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px rgb(119, 119, 119);
     h1 {
         font-size: clamp(1.2rem, 1.5vw, 1.5rem);
         margin: 0.5em 0;
@@ -421,7 +452,7 @@ summary {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px rgb(119, 119, 119);
     p {
         font-size: clamp(1rem, 1.5vw, 1.5rem);
         margin: 0.5em 0;
@@ -489,6 +520,10 @@ summary {
         position: static;
         width: 100%;
         margin-bottom: 0px;
+    }
+
+    article.contact {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .header-container {
