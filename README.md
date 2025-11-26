@@ -1,20 +1,13 @@
-# Corporate Identity
-
-Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
-
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md)
-
-
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Embassay of the Free Mind - Sprint 4
+Deze sprint was het het doel om een gezamenlijke stylesheet te maken. De website maakt hier nu gebruik van. Een aantal items van de stylesheet zijn toegepast op de website.
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+De website heeft nu een lichte achtergrond in plaats van donker, dat hebben we afgesproken bij het maken van de styleguide. Ik heb de kleuren met de achtergrond en de content nu dus eigenlijk omgedraaid. Ook heb ik de accent kleuren een beetje veranderd, en worden de kleuren uit de styleguide gehaald als variabelen. Ook heb ik een nieuwe pagina gemaakt, voor contact. Daar heb ik formulier elementen in gezet zoals input boxes en een submit button. 
+
+https://tzgaming.github.io/look-and-feel-corporate-identity/
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De HTML structuur is overzichtelijk, de CSS alleen niet. Dat is een complete mess, alles staat door elkaar. Ik ga volgende sprint de hele website re-designen, dan zorg ik ervoor dat de CSS meer overzichtelijk is.
 
 ## Bronnen
 
