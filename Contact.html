@@ -28,9 +28,8 @@
         </div>
     </header>
 
-<main>
+<main style="margin-top: 25px;">
   <h1 class="contact">Contact</h1>
-  <hr>
     <article class="contact">
         <section class="contact-section">
             <strong style="font-size: 20px;">Adres:</strong>
@@ -44,13 +43,13 @@
 
         <section class="contact-section">
             <strong style="font-size: 20px;">Stuur een email!</strong>
-            <p style="margin-bottom: 30px;">E-mail adres: <a style="color: #002646; text-decoration: underline; display: inline-block;" href="mailto:info@efm.amsterdam">info@efm.amsterdam</a></p>
+            <p style="margin-bottom: 30px;">E-mail adres: <a style="color: var(--color-primary); text-decoration: underline; display: inline-block;" href="mailto:info@efm.amsterdam">info@efm.amsterdam</a></p>
             <p>Of typ & stuur een email hier beneden:</p>
-            <input style="padding: 4px; margin-bottom: 5px; border-radius: 5px; border: 2px solid #002646;" type="email" placeholder="Jouw e-mail adres...">
+            <form action=""><label for="">Email adres:<input style="background-color: rgba(255, 255, 255, 0);"  type="email"></label>
+            </form>
+            <textarea style="padding: 5px; border: 1px solid var(--color-primary); background-color: rgba(255, 255, 255, 0);" id="email-efm" name="email-efm" rows="15" cols="35"></textarea>
             <br>
-            <textarea style="padding: 5px; border: 2px solid #002646;" id="email-efm" name="email-efm" rows="15" cols="35"></textarea>
-            <br>
-            <input style="border: 2px solid #002646; border-radius: 5px; height: 30px; padding-left: 7px; padding-right: 7px; background-color: white;" id="submit-email" type="submit">
+            <input style="border: 1px solid var(--color-primary); border-radius: 5px; height: 30px; padding-left: 7px; padding-right: 7px; background-color: rgba(255, 255, 255, 0);" id="submit-email" type="submit">
         </section>
 
         <section class="contact-section">

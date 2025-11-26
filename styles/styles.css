@@ -5,12 +5,12 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, p, span, summary, details { 
-    color: #002646;
+    color: var(--color-primary);
     /* font-family: Muli, sans-serif; */
 }
 
 a {
-    color: white;
+    color: var(--color-secondary);
     font-weight: 600;
 }
 
@@ -109,7 +109,7 @@ header {
     display: none;
     background: transparent;
     border: none;
-    color: white;
+    color: var(--color-secondary);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.25rem;
@@ -139,7 +139,7 @@ input#search {
     border: none;
     border-radius: 12px;
     padding: 12px 16px;
-    background: white;
+    background: var(--color-secondary);
     color: #111;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -160,10 +160,10 @@ input#search {
 }
 
 .search-bar button {
-    width: 42px;
+    min-width: 40px;
     border-radius: 50%;
     border: none;
-    background: white;
+    background: var(--color-secondary);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -207,12 +207,12 @@ i {
 
 i.fa-brands {
     scale: 1.6;
-    color: white;
+    color: var(--color-secondary);
     transition: color 0.15s;
 }
 
 i.fa-brands:hover {
-    color: #c5a256;
+    color: var(--color-accent);
 }
 
 .BookDescription {
@@ -220,7 +220,7 @@ i.fa-brands:hover {
 }
 
 a:hover {
-    color: #c5a256;
+    color: var(--color-accent);
 }
 
 footer {
@@ -276,7 +276,7 @@ h1#blogs-text {
     width: 600px;
     border-radius: 20px;
     padding: 20px;
-    color: white;
+    color: var(--color-secondary);
     box-shadow: 10px 10px 10px black;
     margin-bottom: 50px;
     margin-left: 80px;
@@ -323,7 +323,7 @@ button.nextBookBtn {
     border: none;
     font-size: 15px;
     align-items: center;    
-    color: white;
+    color: var(--color-secondary);
     font-size: 20px;
     position: absolute;
     bottom: 225px;
@@ -348,7 +348,7 @@ button.descBtn {
     border: none;
     font-size: 15px;
     align-items: center;    
-    color: white;
+    color: var(--color-secondary);
     font-size: 20px;
     i {
         margin-left: 0px;
@@ -418,11 +418,17 @@ summary {
     background-color: rgb(5, 0, 33);
     padding: 20px;
     border-radius: 30px;
-    color: white;
+    color: var(--color-secondary);
     box-shadow: 10px 10px 10px black;
     h1 {
         font-size: clamp(1.2rem, 1.5vw, 1.5rem);
         margin: 0.5em 0;
+    }
+    p {
+        color: var(--color-secondary);
+        text-align: left;
+        margin-left: 10px;
+        font-weight: bold;
     }
     img {
         margin-top: 15px;
@@ -436,19 +442,20 @@ summary {
 
 .blog {
     display: flex;
+    flex-direction: column;
+    text-align: left;
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
-    color: white;
+    color: var(--color-secondary);
     box-shadow: 10px 10px 10px rgb(119, 119, 119);
     h1 {
         font-size: clamp(1.2rem, 1.5vw, 1.5rem);
         margin: 0.5em 0;
     }
-    img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -457,7 +464,7 @@ summary {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    color: var(--color-secondary);
     box-shadow: 10px 10px 10px rgb(119, 119, 119);
     p {
         font-size: clamp(1rem, 1.5vw, 1.5rem);
@@ -602,10 +609,6 @@ summary {
         width: 100%;
         max-width: 700px;
         height: 35px;
-    }
-
-    .search-bar button {
-        width: 47px;
     }
 
     .book-grid {
